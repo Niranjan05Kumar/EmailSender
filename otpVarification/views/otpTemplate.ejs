@@ -1,0 +1,41 @@
+<!-- views/otp-template.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your OTP Code</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-inline-size: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    .otp {
+      font-size: 32px;
+      font-weight: bold;
+      color: royalblue;
+    }
+    .footer {
+      margin-block-start: 20px;
+      font-size: 12px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Your OTP Code</h2>
+    <p class="otp"><%= otp %></p>
+    <p>This OTP is valid for 10 minutes.</p>
+    <div class="footer">If you didn't request this, please ignore.</div>
+  </div>
+</body>
+</html>
